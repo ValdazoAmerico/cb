@@ -9,6 +9,7 @@
 body{
     font-family: 'Josefin Sans', sans-serif;
     /* font-family: 'Montserrat', sans-serif; */
+    overflow-x: hidden;
 }
 .icons{
     background: #3c3b48;
@@ -26,10 +27,10 @@ body{
 
 /* NAVBAR */
 .logo{
-    width: 8%;
+    width: 10%;
     border-radius: 10%;
-    box-shadow: 1px 1px 10px black;
-    margin: 10px 0px;
+    box-shadow: 1px 1px 5px black;
+    margin: 0px 0px;
 }
 .navbar{
     background: rgba(221, 199, 173, 0.773);
@@ -109,6 +110,26 @@ body{
     
     background-position: center;
 }
+
+.banner .title-border{
+    content:"";
+    width: 30%;
+    height: 2px;
+    display:block;
+    background: block;
+    background-color: rgb(185, 106, 74);
+    margin: 1%;
+    margin-left: 35%;
+    margin-bottom: 2%;
+    box-shadow: 0px 0px 5px black,
+     1px 1px 10px black,
+      2px 2px 15px black,
+      3px 3px 20px black,
+      4px 4px 10px black,
+      5px 5px 5px black,
+      6px 6px 6px black;
+
+}
 .heading{
     text-align: center;
     
@@ -175,11 +196,7 @@ font-weight: bold;
 }
 
 
-.carousel-fade .carousel-item-next.carousel-item-left, .carousel-fade .carousel-item-prev.carousel-item-right, .carousel-fade .carousel-item.active {
-    z-index: 0;}
 
-
-    
 
 /* NOSOTROS */
 
@@ -210,8 +227,10 @@ font-weight: bold;
 /* PROYECTOS */
 
 .projects{
-    background: #01012e;
-    color: #fff;
+    background: #fff;
+    color: #01012e;
+    transform:translate(100%);
+ 
 }
 .project p{
     font-size: 18px;
@@ -222,7 +241,7 @@ font-weight: bold;
     height: 2px;
     display:block;
     background: block;
-    background-color: #fff;
+    background-color: #01012e;
     margin: 1%;
     margin-left: 35%;
 }
@@ -230,11 +249,15 @@ font-weight: bold;
 
 .project-container{
     position: relative;
-    width: 300px;
+    width: 350px;
     height: 400px;
     background: #000;
-    box-shadow: 0 10px 10px rgba(7,4,189,0.8);
+    box-shadow: 1px 1px 5px black;
     cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    
 }
 .project-container .img-content{
     position: absolute;
@@ -243,6 +266,8 @@ font-weight: bold;
     width: 100%;
     height: 100%;
     margin-bottom: 10px;
+    border-radius: 5px;
+    
 }
 .project-container .img-content img{
     position: absolute;
@@ -250,7 +275,9 @@ font-weight: bold;
     left: 0;
     width: 100%;
     height: 100%;
-    transition: 0.5s;
+    transition: all 0.5s ease;
+    object-fit: cover;
+    border-radius: 5px;
 }
 .project-container:hover .img-content img{
     opacity: 0;
@@ -264,6 +291,8 @@ font-weight: bold;
     background: #fff;
     overflow: hidden;
     padding: 15px;
+    transition: all 0.5s ease;
+    border-radius: 5px;
 }
 .project-container:hover .content{
     width: 100%;
@@ -289,23 +318,21 @@ font-weight: bold;
 
 /* SERVICIOS */
 
-#SERVICES .title-border{
-    content:"";
-    width: 30%;
-    height: 2px;
-    display:block;
-    background: block;
-    background-color: #01012e;
-    margin: 1%;
-    margin-left: 35%;
-}
+
 .service-pic img{
     width: 100%;
 }
 .service-inner-wrapper{
     padding-top: 30px;
     padding-bottom: 10px;
+    background: #3c3b48;
+    color: #fff;
 }
+.service-inner-wrapper .fas{
+    color: #fff;
+}
+
+
 .left-service-item{
     position: relative;
     padding-right: 90px;
@@ -327,10 +354,10 @@ font-weight: bold;
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 21px;
-    color: #01012e;
+    color: #fff;
 }
 .left-service-item p{
-    color: #000;
+    color: #fff;
     font-size: 18px;
     font-weight: 300;
     line-height: 25px;
@@ -346,7 +373,7 @@ font-weight: bold;
     position: absolute;
     left:0;
     top: -8px;
-    color: #01012e;
+    color: #fff;
     width: 90px;
     height: 90px;
     text-align: center;
@@ -356,10 +383,10 @@ font-weight: bold;
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 21px;
-    color: #01012e;
+    color: #fff;
 }
 .right-service-item p{
-    color: #000;
+    color: #fff;
     font-size: 18px;
     font-weight: 300;
     line-height: 25px;
@@ -367,8 +394,10 @@ font-weight: bold;
 
 /* TESTIMONIALS */
 #testimonials{
-    background: #01012e;
+    background: #3c3b48;
   height: 80vh;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  transform: translate(-100%);
 
 }
 .carousel-img{
@@ -379,23 +408,27 @@ font-weight: bold;
     transform: translateX(-50%);
     border-radius: 5px;
     box-shadow: 1px 1px 5px #fff;
+    filter: grayscale(0.4);
 }
 #testimonials h2{
     text-align:center;
     font-size: 2rem;
     color: #fff;
-    padding-top: 20px;
+    padding-top: 40px;
     font-family: inherit;
 }
-#testimonials h3{
+#testimonials h5{
     text-align: center;
-    color: #842e31;
+    color: #fff;
     margin-top: 5px;
 }
 #testimonials p{
-    /* color: #fff; */
+    color:#ddc7ad;
     font-size: 18px;
     text-align: center;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    font-style: italic;
 }
 
 .carousel-item{
@@ -416,4 +449,97 @@ font-weight: bold;
     margin: 1%;
     margin-left: 40%;
     margin-bottom: 5px;
+}
+
+
+
+
+/* CONTACTO */
+
+.contact{
+margin-top: 20px;
+margin-bottom: -50px;
+}
+
+.contact .fas{
+    color: #01012e;
+}
+.contact .far{
+    color: #01012e;
+}
+.btn-cont{
+    background: #01012e;
+    color: #fff;
+    transition: color 0.5s ease;
+}
+.btn-cont:hover{
+    color: #fff;
+}
+
+
+.contact-us .title-border{
+    content:"";
+    width: 30%;
+    height: 2px;
+    display:block;
+    background: block;
+    background-color: #01012e;
+    margin: 1%;
+    margin-left: 35%;
+    margin-bottom: 25px;
+}
+/* JS ANIMATION */
+
+#nosotros{
+    transform: translate(100%);
+   
+}
+#SERVICES{
+    transform: translateX(-100%);
+}
+
+.mover{
+    animation: mover 1s ease-out forwards;
+}
+@keyframes mover{
+    100%{
+        transform: translate(0%);
+    }
+}
+
+.fa-chevron-circle-down{
+    position: absolute;
+    bottom: 0;
+    font-size: 40px;
+    color: #93391698;
+    /* border: 1px solid rgba(0,0,0,0.7); */
+    /* background: #ddc7ade8; */
+    border-radius: 50%;
+    padding: 0.5rem;
+    animation-name: syb;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    cursor: pointer;
+}
+.fa-arrow-down:hover{
+    color: #933916;
+}
+
+
+@keyframes syb{
+    25%{
+        transform: translateY(5%);
+    }
+    75%{
+        transform: translateY(-5%);
+    }
+}
+
+.map {
+    width: 95%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
 }
