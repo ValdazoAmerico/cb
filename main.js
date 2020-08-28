@@ -46,7 +46,7 @@ window.addEventListener('scroll', function(){
     let animacion = document.getElementById('nosotros');
     let posicionOjb1 = animacion.getBoundingClientRect().top;
    
-    let tamaniopantalla = window.innerHeight/2;
+    let tamaniopantalla = window.innerHeight/3;
     if(posicionOjb1 < tamaniopantalla){
         animacion.classList.add('mover');
     }
@@ -59,7 +59,7 @@ window.addEventListener('scroll', function(){
     let animacion = document.getElementById('projects');
     let posicionOjb1 = animacion.getBoundingClientRect().top;
 
-    let tamaniopantalla = window.innerHeight/2;
+    let tamaniopantalla = window.innerHeight/3;
     if(posicionOjb1 < tamaniopantalla){
         animacion.classList.add('mover');
     }
@@ -73,7 +73,7 @@ window.addEventListener('scroll', function(){
     let animacion = document.getElementById('SERVICES');
     let posicionOjb1 = animacion.getBoundingClientRect().top;
    
-    let tamaniopantalla = window.innerHeight/2;
+    let tamaniopantalla = window.innerHeight/3;
     if(posicionOjb1 < tamaniopantalla){
         animacion.classList.add('mover');
     }
@@ -86,7 +86,7 @@ window.addEventListener('scroll', function(){
     let animacion = document.getElementById('testimonials');
     let posicionOjb1 = animacion.getBoundingClientRect().top;
   
-    let tamaniopantalla = window.innerHeight/2;
+    let tamaniopantalla = window.innerHeight/3;
     if(posicionOjb1 < tamaniopantalla){
         animacion.classList.add('mover');
        
@@ -103,7 +103,7 @@ window.addEventListener('scroll', function(){
     let animacion = document.getElementById('contact');
     let posicionOjb1 = animacion.getBoundingClientRect().top;
   
-    let tamaniopantalla = window.innerHeight/2;
+    let tamaniopantalla = window.innerHeight/3;
     if(posicionOjb1 < tamaniopantalla){
         animacion.classList.add('mover');
        
