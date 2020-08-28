@@ -18,25 +18,8 @@
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <div class="container-fluid icons py-1 px-3">
-        <div class="row">
-         <div class="col d-flex justify-content-between align-items-baseline">
-            <div class="icons">
-                <a href="#" class="mx-2">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="#" class="mx-2">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="mx-2">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                
-            </div>
-        </div>
-        </div>
-</div>
-<header id="header">
+    
+    <header id="header">
     <nav  class="navbar navbar-expand-md">
         <img src="./images/logo.jpeg" class="logo" alt="">
         <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbar">
@@ -46,26 +29,26 @@
 
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="navbar">
-            <ul class="navbar-nav mx-auto">
+            <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="#" class="nav-link m-2 text-capitalize nav-active">Home
+                    <a href="index.html" class="nav-link m-2 text-capitalize nav-active">Home
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link m-2 text-capitalize">Nosotros
+                    <a id="nosotrosButton" href="#" class="nav-link m-2 text-capitalize">Nosotros
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#projects" class="nav-link m-2 text-capitalize">Proyectos
+                    <a id="projects-button" href="#" class="nav-link m-2 text-capitalize">Proyectos
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link m-2 text-capitalize">Testimonial
+                    <a id="testimonialButton" href="#" class="nav-link m-2 text-capitalize">Testimonios
                     </a>
                 </li>
                 
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link m-2 text-capitalize">Contacto
+                    <a id="contactoButton" href="#" class="nav-link m-2 text-capitalize">Contacto
                     </a>
                 </li>
             </ul>
@@ -84,7 +67,7 @@
                             <p>Viviendas, ampliaciones, refacciones y modernizaciones.</p>
                             
                             
-                        <a href="#contact" class="btn btn-main btn-lg m-3">
+                        <a id="contactoButton2" href="#" class="btn btn-main btn-lg m-3">
                             Contactanos
                         </a>
                         <a href="#" class="btn btn-main btn-lg m-3">
@@ -230,6 +213,7 @@
                 <div class="col-md-12 text-center">
                     <h2 class="mb-4">Proyectos</h2>
                     <span class="title-border"></span>
+                    <p>Click sobre la imagen para más info.</p>
                 </div>
             </div>
             <!-- IMAGE OVERLAY -->
@@ -240,10 +224,13 @@
                             <img class="img-fluid project-img" src="images/plano2.jpeg" alt="">
                         </div>
                         <div class="content">
+                            <a href="proyectos.html">
                             <h3 class="text-center text-dark px-3">
-                                Vivienda 3 Ambientes
+                                Casa de 2 plantas
                             </h3>
-                            <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum corporis labore quos maiores enim necessitatibus ratione fugiat debitis consequuntur nam?</p>
+                            <p class="text-dark"><strong>Ambientes:</strong> Cocina, living-comedor, sala de estar, 2 dormitorios en suite, toilette y balcón. </p>
+                            <p class="text-dark" > <strong>Terreno:</strong> 8x8</p>
+                        </a>
                         </div>
                     </div>
                     <!-- END OF IMG OVERLAY  -->
@@ -370,7 +357,7 @@
                 <div class="col-md-4 text-center">
                     <i class="far fa-envelope-open fa-3x color"></i>
                     <h5 class="mt-3">Mail:</h5>
-                    <p>info@info.com</p>
+                    <p>cbconstrucciones2010@gmail.com</p>
 
                 </div>
             </div>
@@ -378,7 +365,27 @@
     </div>
     
 </section>
-<img class="map" src="https://maps.googleapis.com/maps/api/staticmap?scale=1&size=1600x900&style=feature:poi.business|visibility:off&style=feature:water|visibility:simplified&style=feature:road|element:labels.icon|visibility:off&style=feature:road.highway|element:labels|saturation:-90|lightness:25&format=jpg&language=en&region=AR&markers=color:0x60a5a5|-34.527948,-58.5189812&zoom=16&client=google-presto&signature=8PzbNonaUQzI6kDUTyQwQVLuUIs" alt="">
+<div>
+
+<img id="mapa" class="map" src="https://maps.googleapis.com/maps/api/staticmap?scale=1&size=1600x900&style=feature:poi.business|visibility:off&style=feature:water|visibility:simplified&style=feature:road|element:labels.icon|visibility:off&style=feature:road.highway|element:labels|saturation:-90|lightness:25&format=jpg&language=en&region=AR&markers=color:0x60a5a5|-34.527948,-58.5189812&zoom=16&client=google-presto&signature=8PzbNonaUQzI6kDUTyQwQVLuUIs" alt="">
+</div>
+
+<footer>
+    <div class="footer_new">
+
+      <div>
+        <h4  style="color:cadetblue;">Américo Valdazo Design</h4>
+        <p>we are experts in creating your <i style="font-weight: 700;">dreams</i>.</p>
+      </div>
+      
+      <div>
+        <h4 style="color:rgba(95, 158, 160, 0.452);">Contact</h4>
+        
+        <p>
+          <i></i> <a href="mailto:valdazoamerico@gmail.com" style="color: #000;text-decoration: none;">valdazoamerico@gmail.com</a></p>
+        
+    </div>
+</footer>
 
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">

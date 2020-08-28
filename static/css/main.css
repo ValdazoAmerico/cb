@@ -33,12 +33,10 @@ body{
     margin: 1px 0px;
 }
 .navbar{
-    background: rgba(221, 199, 173, 0.773);
+    background: rgba(235, 216, 195, 0.893);
     padding: 0px 20px;
     transition: padding 2s ease;
-    /* transform: translateX(50%); */
 }
-
 .navbar-brand{
     color: #842e31;
     font-size: 35px;
@@ -102,7 +100,7 @@ body{
     object-fit: fill;
 }
 .banner{
-    height:  100vh;
+    height:  85vh;
     background: radial-gradient(rgba(128,128,128,0.3),rgba(128,128,121,0.6)),url('./images/house2.jpg');
     background-size: cover;
     justify-content: center;
@@ -281,19 +279,20 @@ font-weight: bold;
     object-fit: cover;
     border-radius: 5px;
 }
-
+.project-container:hover .img-content img{
+    opacity: 0;
+}
 .project-container .content{
     position: absolute;
     left: 10%;
     bottom: 5px;
     width: 80%;
     height: 60px;
-    background: rgba(255, 255, 255, 0.906);
+    background: #fff;
     overflow: hidden;
     padding: 15px;
     transition: all 0.5s ease;
     border-radius: 5px;
-    
 }
 .project-container:hover .content{
     width: 100%;
@@ -305,7 +304,6 @@ font-weight: bold;
     font-size: 20px;
 }
 .project-container .content p{
-    
     margin: 10px 0 0;
     opacity: 0;
     line-height: 18px;
@@ -315,11 +313,6 @@ font-weight: bold;
 .project-container:hover .content p{
     opacity: 1;
     transition-delay: 0.4s;
-    margin-top: 30%;
-    text-align: center;
-}
-.project-container .content a{
-    text-decoration: none;
 }
 
 
@@ -463,10 +456,6 @@ font-weight: bold;
 
 /* CONTACTO */
 
-#contact{
-    transform: translateX(100%);
-}
-
 .contact{
 margin-top: 20px;
 margin-bottom: -50px;
@@ -499,29 +488,6 @@ margin-bottom: -50px;
     margin-left: 35%;
     margin-bottom: 25px;
 }
-
-
-/* FOOTER  */
-.footer_new{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: rgb(210, 233, 222, 0.5);
-    margin-top: 2%;
-}
-.footer_new h4{
-    text-align: center;
-    margin-bottom: 0.3rem;
-    font-size: 1.2rem;
-}
-.footer_new p{
-    font-size: 1rem;
-    margin-bottom: 0;
-}
-
-
-
-
 /* JS ANIMATION */
 
 #nosotros{
@@ -543,7 +509,7 @@ margin-bottom: -50px;
 
 .fa-chevron-circle-down{
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     font-size: 40px;
     color: #93391698;
     /* border: 1px solid rgba(0,0,0,0.7); */
@@ -563,7 +529,7 @@ margin-bottom: -50px;
 
 @keyframes syb{
     25%{
-        transform: translateY(5%);
+        transform: translateY(20%);
     }
     75%{
         transform: translateY(-5%);
@@ -572,31 +538,8 @@ margin-bottom: -50px;
 
 .map {
     width: 95%;
-    position: relative;
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
     
-}
-
-
-@media only screen and (min-width: 768px){
-    .navbar-nav{
-        transform: translateX(50%);
-   }
-}
-
-@media only screen and (max-width: 768px){
-    .heading h1{
-        font-size: 30px;
-    }
-    .heading p{
-        font-size: 15px;
-    }
-    .logo {
-        width: 20%;
-    }
-    .carousel-img{
-        width: 100px;
-        max-height: 100px;
-    }
 }
