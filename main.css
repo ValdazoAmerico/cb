@@ -587,10 +587,10 @@ margin-bottom: -50px;
 
 @media only screen and (max-width: 768px){
     .heading h1{
-        font-size: 30px;
+        font-size: 25px;
     }
     .heading p{
-        font-size: 15px;
+        font-size: 12px;
     }
     .logo {
         width: 20%;
@@ -598,5 +598,8 @@ margin-bottom: -50px;
     .carousel-img{
         width: 100px;
         max-height: 100px;
+    }
+    .banner .btn-main{
+        font-size: 12px;
     }
 }
