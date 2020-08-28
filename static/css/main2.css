@@ -53,6 +53,7 @@ img.art:hover{
 .navbar{
   justify-content: unset!important;
   /* background: rgba(221, 199, 173, 0.773) !important; */
+  height: 95px;
 }
 .nav-item{
   position: absolute;
@@ -64,3 +65,4 @@ img.art:hover{
   padding-left: .5rem!important;
   padding-right: .5rem!important;
 }
+
