@@ -8,8 +8,7 @@ let contacto = document.getElementById('contact')
 let contactoButton = document.getElementById('contactoButton')
 let contactoButton2 = document.getElementById('contactoButton2')
 let nosotrosButton = document.getElementById('nosotrosButton')
-let testimonials = document.getElementById('testimonials')
-let testimonialBUtton = document.getElementById('testimonialButton')
+
 
 proyectosButton.addEventListener('click', function(){
     let pos1 = proyectos.getBoundingClientRect().top
@@ -29,11 +28,7 @@ nosotrosButton.addEventListener('click', function(){
     window.scrollTo(0, pos1);
 })
 
-testimonialBUtton.addEventListener('click', function(){
-    let pos1 = testimonials.getBoundingClientRect().top
-    window.scrollTo(0, pos1);
-})
-
+    
 
 flecha.addEventListener('click', function() {
     let pos1 = nos.getBoundingClientRect().top
@@ -73,7 +68,7 @@ window.addEventListener('scroll', function(){
     let animacion = document.getElementById('SERVICES');
     let posicionOjb1 = animacion.getBoundingClientRect().top;
    
-    let tamaniopantalla = window.innerHeight;
+    let tamaniopantalla = window.innerHeight / 2;
     if(posicionOjb1 < tamaniopantalla){
         animacion.classList.add('mover');
     }
