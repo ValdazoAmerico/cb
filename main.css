@@ -223,6 +223,16 @@ transform: skew(-10deg);
 font-weight: bold;
 
 }
+.fa-whatsapp{
+    color: green;
+    font-size: 52px;
+}
+#app-whatsapp{
+    position: fixed;
+    left: 90%;
+    top: 92%;
+    z-index: 1;
+}
 
 
 
@@ -528,12 +538,19 @@ margin-bottom: -50px;
 
 
 /* FOOTER  */
+
+footer{
+    z-index: 9999;
+    position: relative;
+}
 .footer_new{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgb(210, 233, 222, 0.5);
+    background: rgb(119,117,143);
+background: radial-gradient(circle, rgba(119,117,143,1) 0%, rgba(5,19,63,1) 100%);
     margin-top: 2%;
+    
 }
 .footer_new h4{
     text-align: center;
@@ -543,6 +560,11 @@ margin-bottom: -50px;
 .footer_new p{
     font-size: 1rem;
     margin-bottom: 0;
+    color: #fff;
+}
+.footer_new a{
+    color: #fff;
+    text-decoration: none;
 }
 
 
