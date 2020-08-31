@@ -643,15 +643,15 @@ background: radial-gradient(circle, rgba(119,117,143,1) 0%, rgba(5,19,63,1) 100%
         width: 20%;
     }
     .carousel-img{
-        width: 100px;
+       width: 100px;
         max-height: 100px;
     }
     .banner .btn-main{
         font-size: 14px;
     }
-    .banner{
+    /* .banner{
         background-position: center;
-    }
+    } */
     .navbar-nav{
         position: relative;
         left: 15%; 
