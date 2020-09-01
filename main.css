@@ -214,22 +214,22 @@ font-weight: bold;
 
 }
 .fa-whatsapp{
-    color: green;
+    color: #fff;
     font-size: 52px;
-    background: #fff;
+    background: green;
     border-radius: 50%;
     padding: 0.5rem;
     transition: all 0.5s ease;
 }
 .fa-whatsapp:hover{
-    background: #000;
-    color: #fff;
+    background: #fff;
+    color: green;
 }
 
 #app-whatsapp{
     position: fixed;
     left: 95%;
-    top: 90%;
+    top: 89%;
     z-index: 1;
 }
 
@@ -618,8 +618,8 @@ background: radial-gradient(circle, rgba(119,117,143,1) 0%, rgba(5,19,63,1) 100%
     }
 }
 
-.map {
-    width: 95%;
+iframe {
+    
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -631,7 +631,7 @@ background: radial-gradient(circle, rgba(119,117,143,1) 0%, rgba(5,19,63,1) 100%
 
 @media only screen and (max-width: 768px){
     .heading h1{
-        font-size: 30px;
+        font-size: 28px;
     }
     .heading p{
         font-size: 18px;
