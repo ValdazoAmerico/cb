@@ -122,25 +122,6 @@ nav{
     
 }
 
-.banner .title-border{
-    content:"";
-    width: 30%;
-    height: 2px;
-    display:block;
-    background: block;
-    background-color: rgb(185, 106, 74);
-    margin: 1%;
-    margin-left: 35%;
-    margin-bottom: 2%;
-    box-shadow: 0px 0px 5px black,
-     1px 1px 10px black,
-      2px 2px 15px black,
-      3px 3px 20px black,
-      4px 4px 10px black,
-      5px 5px 5px black,
-      6px 6px 6px black;
-
-}
 .heading{
     text-align: center;
     
@@ -149,13 +130,21 @@ nav{
     font-weight: bold;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 65px;
-    /* color: rgb(185, 106, 74); */
+   
     color:  #6B7CB2;
+     /* background: rgba(0, 0, 0, 0.237); */
+     padding-top: 2%;
+     padding-bottom: 0;
+     border-radius: 5px;
+
    
     
     text-shadow: 0px 0px 5px black,
-     1px 1px 10px black,
-      2px 2px 15px black;
+     1px 1px 1px black,
+      2px 2px 2px black,
+      3px 3px 3px black,
+      4px 4px 4px black,
+      6px 6px 6px black;
       
       
       
@@ -170,10 +159,14 @@ nav{
     color:  #fff;
     
     font-family: 'Josefin Sans', sans-serif;
-     text-shadow: 0px 0px 1px black,  
-    1px 1px 1px black; 
+     text-shadow: 0px 0px 5px black,  
+    1px 1px 1px black,
+    2px 2px 2px black,
+    3px 3px 3px black,
+    5px 5px 5px black;
+   
     
-    background-color: rgba(0, 0, 0, 0.637);
+    
     font-weight: 400;
     letter-spacing: 2px;    
     
@@ -204,12 +197,11 @@ nav{
     transition-duration: 0.3s;
     transition-property: transform;
     transform-origin: 0 100%;
-    /* border: 1px solid rgba(0,0,0,0.7); */
+  
    font-size: 18px;
 }
- .botones{
-    transform: translateX(-2%);
-} 
+
+ 
 
 .btn-main:hover, .btn-main:focus, .btn-main:active {
 transform: skew(-10deg);
@@ -222,8 +214,8 @@ font-weight: bold;
 }
 #app-whatsapp{
     position: fixed;
-    left: 90%;
-    top: 92%;
+    left: 95%;
+    top: 91%;
     z-index: 1;
 }
 
