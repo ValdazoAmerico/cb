@@ -1,0 +1,34 @@
+  body{
+  background-color: #fff:
+  color: black;
+}
+img.art{
+  width: 100%;
+  height: 300px;
+  object-fit:cover;
+  transition: transform 1s;
+}
+.thumb{
+  overflow: hidden;
+  margin: 1px;
+}
+
+img.art:hover{
+  transform: scale(1.2);
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  margin-right: 0 !important;
+}
+.text{
+  letter-spacing: 3px;
+  font-family: 'Montserrat', sans-serif;
+}
+.text p{
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
