@@ -631,25 +631,25 @@ background: radial-gradient(circle, rgba(119,117,143,1) 0%, rgba(5,19,63,1) 100%
 
 @media only screen and (max-width: 768px){
     .heading h1{
-        font-size: 28px;
+        font-size: 30px;
     }
     .heading p{
-        font-size: 16px;
+        font-size: 18px;
         margin-top: 10vh;
     margin-bottom: 10vh;
     }
     .logo {
-        width: 10%;
+        width: 20%;
     }
     .carousel-img{
        width: 100px;
         max-height: 100px;
     }
     .banner .btn-main{
-        font-size: 14px;
+        font-size: 16px;
     }
      .banner{
-         padding-top: 25%;
+         padding-top: 40%;
         align-items: flex-start;
     } 
     .navbar-nav{
@@ -774,7 +774,7 @@ background: radial-gradient(circle, rgba(119,117,143,1) 0%, rgba(5,19,63,1) 100%
      #app-whatsapp{
         position: absolute;
         top: 90%;
-        left: 90%
+        left: 87%
     } 
     .fa-whatsapp{
       
