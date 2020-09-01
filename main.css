@@ -780,6 +780,9 @@ iframe {
       
         font-size: 35px;
     }
+    iframe{
+        width: 50%;
+    }
     
     
 }
