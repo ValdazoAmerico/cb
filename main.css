@@ -759,10 +759,11 @@ background: radial-gradient(circle, rgba(119,117,143,1) 0%, rgba(5,19,63,1) 100%
      #app-whatsapp{
         position: absolute;
         top: 94%;
+        left: 92%
     } 
     .fa-whatsapp{
       
-        font-size: 30px;
+        font-size: 35px;
     }
     
     
