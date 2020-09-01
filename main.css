@@ -770,4 +770,14 @@ background: radial-gradient(circle, rgba(119,117,143,1) 0%, rgba(5,19,63,1) 100%
     .footer-brand{
         margin-bottom: 5px;
     }
+
+     #app-whatsapp{
+        position: absolute;
+    } 
+    .fa-whatsapp{
+      
+        font-size: 30px;
+    }
+    
+    
 }
