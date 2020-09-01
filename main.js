@@ -2,7 +2,7 @@
 const flecha = document.getElementById('flecha')
 let nos = document.getElementById('nosotros')
 let proyectos = document.getElementById('projects')
-let proyectosButton = document.getElementById('projects-button')
+
 
 let contacto = document.getElementById('contact')
 let contactoButton = document.getElementById('contactoButton')
@@ -10,10 +10,6 @@ let contactoButton2 = document.getElementById('contactoButton2')
 let nosotrosButton = document.getElementById('nosotrosButton')
 
 
-proyectosButton.addEventListener('click', function(){
-    let pos1 = proyectos.getBoundingClientRect().top
-    window.scrollTo(0, pos1);
-})
 
 contactoButton.addEventListener('click', function(){
     let pos1 = contacto.getBoundingClientRect().top
