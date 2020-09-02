@@ -545,6 +545,7 @@ margin-bottom: -50px;
 footer{
     z-index: 9999;
     position: relative;
+    font-family: 'Josefin Sans', sans-serif
 }
 .footer_new{
     display: flex;
@@ -739,6 +740,9 @@ iframe {
         margin: -40px !important;
     }
     /* Testimonios */
+    #testimonials{
+        height: 50vh;
+    }
     #testimonials h2{
         font-size: 18px;
     }
