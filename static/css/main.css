@@ -9,7 +9,7 @@
 body{
     font-family: 'Josefin Sans', sans-serif !important;
     /* font-family: 'Montserrat', sans-serif; */
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .icons{
@@ -546,6 +546,7 @@ margin-bottom: -50px;
 footer{
     z-index: 9999;
     position: relative;
+    bottom: -100px !important;
     font-family: 'Josefin Sans', sans-serif
 }
 .footer_new{
@@ -684,10 +685,12 @@ iframe {
 
     html, body {overflow:auto}
     .text h2{
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     .text p{
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
+    
+        
     
 }
