@@ -47,7 +47,7 @@ nav{
     
 }
 .navbar-nav{
-    transform: translateX(-15%);
+    /* transform: translateX(-15%); */
      
 }
 
@@ -652,13 +652,13 @@ iframe {
          padding-top: 40%;
         align-items: flex-start;
     } 
-    /* .navbar-nav{
-        position: relative;
-        left: 15%; 
-        z-index: 1;
-        background: #fff;
+     #navbar{
+         position: relative;
+        /* left: 15%;  */
+         /* z-index: 1; */
+        background: #fff; 
 
-    } */
+    } 
     /* #Nosotros */
     .about h2{
         font-size: 18px;
