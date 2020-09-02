@@ -11,6 +11,7 @@ body{
     /* font-family: 'Montserrat', sans-serif; */
     overflow-x: hidden;
 }
+
 .icons{
     background: #3c3b48;
     text-decoration: none;
@@ -28,7 +29,10 @@ body{
 /* NAVBAR */
 
 nav{
-    height: 60px; 
+    height: 60px;
+    position: fixed !important; 
+    top:0;
+    
 }
 .logo{
     width: 8%;
@@ -40,10 +44,14 @@ nav{
     background: #fff;
     padding: 0px !important;
     transition: padding 2s ease;
+    /* position: fixed !important; */
+    z-index: 20;
+    width: 100vw;
     
 }
 .navbar-nav{
     transform: translateX(-15%);
+    
      
 }
 
@@ -113,6 +121,7 @@ nav{
 }
 .banner{
     height:  100vh;
+    width: 100vw;
     background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(0,0,0,0.5)),url('./images/fondo.jpg');
     /* background-image: url('./images/fondo.jpg'); */
     background-size: cover;
@@ -209,14 +218,24 @@ font-weight: bold;
 
 }
 .fa-whatsapp{
-    color: green;
+    color: #fff;
     font-size: 52px;
+    background: green;
+    border-radius: 50%;
+    padding: 0.5rem;
+    transition: all 0.5s ease;
 }
+.fa-whatsapp:hover{
+    background: #fff;
+    color: green;
+    
+}
+
 #app-whatsapp{
     position: fixed;
-    left: 95%;
-    top: 91%;
-    z-index: 1;
+    right:0;
+    top: 89vh;
+    z-index: 99;
 }
 
 
@@ -527,6 +546,7 @@ margin-bottom: -50px;
 footer{
     z-index: 9999;
     position: relative;
+    font-family: 'Josefin Sans', sans-serif
 }
 .footer_new{
     display: flex;
@@ -604,8 +624,8 @@ background: radial-gradient(circle, rgba(119,117,143,1) 0%, rgba(5,19,63,1) 100%
     }
 }
 
-.map {
-    width: 95%;
+iframe {
+    
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -616,129 +636,34 @@ background: radial-gradient(circle, rgba(119,117,143,1) 0%, rgba(5,19,63,1) 100%
 
 
 @media only screen and (max-width: 768px){
-    .heading h1{
-        font-size: 28px;
-    }
-    .heading p{
-        font-size: 16px;
-        margin-top: 10vh;
-    margin-bottom: 10vh;
-    }
+    
+        /* .thumb{
+          width: 25%;
+          position: relative;
+          left: 25%;
+          transform: translateX(-25%)
+
+        } */
+      
     .logo {
         width: 20%;
     }
-    .carousel-img{
-       width: 100px;
-        max-height: 100px;
-    }
-    .banner .btn-main{
-        font-size: 14px;
-    }
-     .banner{
-         padding-top: 25%;
+   
+     /* .banner{
+         padding-top: 40%;
         align-items: flex-start;
+    }  */
+     .navbar{
+         /* position: fixed !important; */
+        /* left: 15%;  */
+         /* z-index: 1; */
+        background: #fff; 
+
     } 
     .navbar-nav{
-        position: relative;
-        left: 15%; 
-        z-index: 1;
-        background: #fff;
-
-    }
-    /* #Nosotros */
-    .about h2{
-        font-size: 18px;
-    }
-    .about p{
-        font-size: 14px;
-        font-weight: lighter;
-    }
-    .about i{
-        transform: scale(0.5);
-        margin: 0 !important;
-    }
-    
-    .about h5{
-        padding: 0 !important;
-        font-size: 16px;
-        
-    }
-   
-    .about .col-lg-4{
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-    #SERVICES i{
-        transform: scale(0.5);
-        
-    }
-    #SERVICES h3{
-        font-size: 14px;
-        margin-bottom: 0 !important;
-    }
-    #SERVICES p{
-        font-size: 14px;
-    }
-    .left-service-item{
-        margin-bottom: 0;
-    }
-    .service-pic img{
-        height: 0;
-    }
-    .service-pic{
-        width: 50%;
-    }
-    #SERVICES .mt-5{
-        margin: 0 !important;
-    }
-    .right-service-item{
-        margin-bottom: 0;
-    }
-    .service-inner-wrapper{
-        padding: 0;
-    }
-    .fa-chevron-circle-down{
-        font-size: 20px;
-    }
-
-    /* PROYECTOS */
-    .project h2{
-        font-size: 18px;
-    }
-    .project p{
-        font-size: 14px;
-  }
-  .project .m-4{
-    margin: 0px !important;
-  }
-    .image-center{
-        transform: scale(0.7);
-        margin: -40px !important;
-    }
-    /* Testimonios */
-    #testimonials h2{
-        font-size: 18px;
-    }
-    #testimonials p{
-        font-size: 14px;
-    }
-    #testimonials h5{
-        font-size: 14px;
-    }
-
-    /* Contacto */
-    #contact h2{
-        font-size: 18px;
-    }
-    #contact i{
-        transform: scale(0.5);
-    }
-    #contact h5{
-        font-size: 16px;
-        margin: 0 !important;
-    }
-    #contact p{
-        font-size: 14px;
+        transform: translateX(0%);
+        background: white;
+         
     }
 
     /* Footer  */
@@ -757,15 +682,12 @@ background: radial-gradient(circle, rgba(119,117,143,1) 0%, rgba(5,19,63,1) 100%
         margin-bottom: 5px;
     }
 
-     #app-whatsapp{
-        position: absolute;
-        top: 93%;
-        left: 90%
-    } 
-    .fa-whatsapp{
-      
-        font-size: 35px;
+    html, body {overflow:auto}
+    .text h2{
+        font-size: 1rem;
     }
-    
+    .text p{
+        font-size: 0.7rem;
+    }
     
 }
