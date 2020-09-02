@@ -222,7 +222,7 @@ font-weight: bold;
     background: green;
     border-radius: 50%;
     padding: 0.5rem;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 .fa-whatsapp:hover{
     background: #fff;
@@ -608,8 +608,9 @@ background: radial-gradient(circle, rgba(119,117,143,1) 0%, rgba(5,19,63,1) 100%
     animation-duration: 1s;
     cursor: pointer;
     text-shadow: 1px 1px 5px black;
+    transition: all 0.3s ease;
 }
-.fa-arrow-down:hover{
+.fa-chevron-circle-down:hover{
     color: #933916;
 }
 
@@ -722,7 +723,7 @@ iframe {
         padding: 0;
     }
     .fa-chevron-circle-down{
-        font-size: 20px;
+        font-size: 25px;
     }
 
     /* PROYECTOS */
@@ -792,6 +793,12 @@ iframe {
     iframe{
         width: 70%;
     }
+    #app-whatsapp{
+        
+        top: 86vh;
+       
+    }
+
     
     
 }
