@@ -11,7 +11,7 @@ body{
     /* font-family: 'Montserrat', sans-serif; */
     overflow-x: hidden;
 }
-html, body {height:100%;overflow:auto}
+
 .icons{
     background: #3c3b48;
     text-decoration: none;
@@ -780,10 +780,7 @@ iframe {
         margin-bottom: 5px;
     }
 
-     #app-whatsapp{
-        
-        
-    } 
+    html, body {overflow:auto}
     .fa-whatsapp{
       
         font-size: 35px;
