@@ -1,8 +1,6 @@
 
 body{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  
   background-color: #fff;
   color: black;
 }
@@ -11,9 +9,9 @@ img.art{
   height: 300px;
   object-fit:cover;
   transition: transform 1s;
-}
+  border-radius: 5px;}
 .thumb{
-  overflow: hidden;
+  /* overflow: hidden; */
   margin: 1px;
 }
 
@@ -31,7 +29,7 @@ img.art:hover{
   margin-right: 0 !important;
 }
 .text{
-  letter-spacing: 2px;
+  
   font-family: 'Josefin Sans', sans-serif;
   position: relative;
   bottom: -100px;
@@ -42,11 +40,11 @@ img.art:hover{
 .text p{
   font-size: 1rem;
   line-height: 1rem;
+  letter-spacing: 1px;
 }
 .footer{
   font-family: 'Josefin Sans', sans-serif;
-  position: relative;
-  bottom:-100px;
+  
 }
 .footer_new h4{
   text-align: center;

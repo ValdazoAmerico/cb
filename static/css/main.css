@@ -13,9 +13,6 @@ body{
 }
 
 
-
-
-
 /* NAVBAR */
 
 nav{
@@ -84,6 +81,7 @@ nav{
     animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     
 }
+
 .nav-active{
     color: #fff;
     font-size: 18px;
@@ -96,8 +94,11 @@ nav{
 .nav-active:hover{
     background:  #6B7CB2;
 }
-
-
+@keyframes up {
+    0%{transform: translateY(0%);}
+    50%{transform: translateY(-10%);}
+    100%{transform: translateY(0%);}
+}
 
 
 /* FOOTER  */
