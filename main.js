@@ -7,7 +7,7 @@ let proyectos = document.getElementById('projects')
 let contacto = document.getElementById('contact')
 let contactoButton = document.getElementById('contactoButton')
 let contactoButton2 = document.getElementById('contactoButton2')
-let nosotrosButton = document.getElementById('nosotrosButton')
+
 
 
 
@@ -17,11 +17,7 @@ contactoButton.addEventListener('click', function(){
 })
 contactoButton2.addEventListener('click', function(){
     let pos1 = contacto.getBoundingClientRect().top
-    window.scrollTo(0, pos1);
-})
-nosotrosButton.addEventListener('click', function(){
-    let pos1 = nos.getBoundingClientRect().top
-    window.scrollTo(0, pos1);
+    window.scrollTo(0, pos1 -10);
 })
 
     
