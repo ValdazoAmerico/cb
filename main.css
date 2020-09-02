@@ -652,13 +652,13 @@ iframe {
          padding-top: 40%;
         align-items: flex-start;
     } 
-    .navbar-nav{
+    /* .navbar-nav{
         position: relative;
         left: 15%; 
         z-index: 1;
         background: #fff;
 
-    }
+    } */
     /* #Nosotros */
     .about h2{
         font-size: 18px;
