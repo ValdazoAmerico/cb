@@ -13,7 +13,7 @@ let nosotrosButton = document.getElementById('nosotrosButton')
 
 contactoButton.addEventListener('click', function(){
     let pos1 = contacto.getBoundingClientRect().top
-    window.scrollTo(0, pos1);
+    window.scrollTo(0, pos1 - 10);
 })
 contactoButton2.addEventListener('click', function(){
     let pos1 = contacto.getBoundingClientRect().top
@@ -28,7 +28,7 @@ nosotrosButton.addEventListener('click', function(){
 
 flecha.addEventListener('click', function() {
     let pos1 = nos.getBoundingClientRect().top
-    window.scrollTo(0, pos1);
+    window.scrollTo(0, pos1 - 70);
 })
 
 
@@ -41,9 +41,7 @@ window.addEventListener('scroll', function(){
     if(posicionOjb1 < tamaniopantalla){
         animacion.classList.add('mover');
     }
-    if(posicionOjb1 > tamaniopantalla){
-        animacion.classList.remove('mover');
-    }
+    
 })
 
 window.addEventListener('scroll', function(){
@@ -54,9 +52,7 @@ window.addEventListener('scroll', function(){
     if(posicionOjb1 < tamaniopantalla){
         animacion.classList.add('mover');
     }
-    if(posicionOjb1 > tamaniopantalla){
-        animacion.classList.remove('mover');
-    }
+    
 })
 
 
@@ -68,9 +64,7 @@ window.addEventListener('scroll', function(){
     if(posicionOjb1 < tamaniopantalla){
         animacion.classList.add('mover');
     }
-    if(posicionOjb1 > tamaniopantalla){
-        animacion.classList.remove('mover');
-    }
+    
 })
 
 window.addEventListener('scroll', function(){
@@ -82,11 +76,7 @@ window.addEventListener('scroll', function(){
         animacion.classList.add('mover');
        
     }
-    if(posicionOjb1 > tamaniopantalla){
-       
-        animacion.classList.remove('mover')
-        
-    }
+    
 })
 
 
@@ -99,9 +89,5 @@ window.addEventListener('scroll', function(){
         animacion.classList.add('mover');
        
     }
-    if(posicionOjb1 > tamaniopantalla){
-       
-        animacion.classList.remove('mover')
-        
-    }
+   
 })
