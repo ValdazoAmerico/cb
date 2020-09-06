@@ -16,18 +16,18 @@ img.art{
 }
 
 img.art:hover{
-  transform: scale(1.2);
+  filter: grayscale(0.8);
 }
 .flex{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   position: relative;
   bottom: -100px;
+  
 }
-.container{
-  margin-right: 0 !important;
-}
+
 .text{
   
   font-family: 'Josefin Sans', sans-serif;
@@ -113,3 +113,10 @@ text-size-adjust:100%;
   text-decoration: none;
 }
 
+
+
+ 
+.thumb {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}

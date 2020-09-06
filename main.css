@@ -502,7 +502,7 @@ font-weight: bold;
 /* CONTACTO */
 
 #contact{
-    transform: translateX(100%);
+    transform: translateX(-100%);
 }
 
 .contact{

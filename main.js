@@ -11,10 +11,7 @@ let contactoButton2 = document.getElementById('contactoButton2')
 
 
 
-contactoButton.addEventListener('click', function(){
-    let pos1 = contacto.getBoundingClientRect().top
-    window.scrollTo(0, pos1 - 10);
-})
+
 contactoButton2.addEventListener('click', function(){
     let pos1 = contacto.getBoundingClientRect().top
     window.scrollTo(0, pos1 -10);
@@ -63,17 +60,7 @@ window.addEventListener('scroll', function(){
     
 })
 
-window.addEventListener('scroll', function(){
-    let animacion = document.getElementById('testimonials');
-    let posicionOjb1 = animacion.getBoundingClientRect().top;
-  
-    let tamaniopantalla = window.innerHeight;
-    if(posicionOjb1 < tamaniopantalla){
-        animacion.classList.add('mover');
-       
-    }
-    
-})
+
 
 
 window.addEventListener('scroll', function(){

@@ -20,6 +20,7 @@ nav{
     position: fixed !important; 
     top:0;
     
+    
 }
 .logo{
     width: 8%;
@@ -209,6 +210,7 @@ iframe {
     .logo {
         width: 20%;
     }
+    
    
      /* .banner{
          padding-top: 40%;
@@ -244,12 +246,7 @@ iframe {
     }
 
     html, body {overflow:auto}
-    .text h2{
-        font-size: 1.1rem;
-    }
-    .text p{
-        font-size: 0.8rem;
-    }
+    
     
         
     
